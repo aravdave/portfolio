@@ -10,10 +10,7 @@ export default function Home() {
         <title>Arav Dave</title>
         <meta name="description" content="Arav Dave's Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          rel="icon"
-          href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/toss-face/342/sunrise-over-mountains_1f304.png"
-        />
+        <link rel="icon" href="/images/sunset.jpeg" />
       </Head>
       <div className="mx-20 lg:mx-40 text-white flex-col flex-grow mb-12 justify-center">
         <main className="flex flex-col mt-8 justify-center space-y-5">
