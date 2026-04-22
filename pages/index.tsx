@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Footer from "../components/Footer.js";
-import Image from "next/image.js";
 import Link from "next/link";
 
 export default function Home() {
@@ -15,7 +14,7 @@ export default function Home() {
       <div className="mx-20 lg:mx-40 text-white flex-col flex-grow mb-12 justify-center">
         <main className="flex flex-col mt-8 justify-center space-y-5">
           <div className="flex-nowrap rounded-lg space-x-9">
-            <Image
+            <img
               className="ml-4 mb-4 mt-4 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-120  duration-100 ring-8 ring-green-300 self-start rounded-full float-left mr-8"
               width="175"
               height="175"
@@ -96,7 +95,7 @@ export default function Home() {
           <div className="mb-8 pt-8 space-x-16 grid grid-flow-col justify-center items-center justify-items-center">
             <div className="drop-shadow-2xl rounded-md flex flex-col items-center bg-amber-100">
               <a target="_blank" rel="noreferrer" href="https://meal-with-me.vercel.app/">
-                <Image className="rounded-t-md" src="/images/MealWithMe.png" quality="90" width="225" height="100" alt="MealWithMe screenshot" />
+                <img className="rounded-t-md" src="/images/MealWithMe.png" width="225" height="100" alt="MealWithMe screenshot" />
               </a>
               <a className="hover:underline underline-offset-4 hover:decoration-sky-600 mt-4 text-2xl font-sans font-semibold text-black" rel="noreferrer" target="_blank" href="https://meal-with-me.vercel.app/ ">
                 MealWithMe
@@ -116,14 +115,14 @@ export default function Home() {
             </div>
             <div className="drop-shadow-2xl rounded-md flex flex-col items-center bg-amber-100">
               <a target="_blank" rel="noreferrer" href="https://pcbitcamp22.github.io/codle/">
-                <Image className="rounded-t-md" src="/images/codle.jpg" quality="90" width="300" height="200" alt="Codle screenshot" />
+                <img className="rounded-t-md" src="/images/codle.jpg" width="300" height="200" alt="Codle screenshot" />
               </a>
               <a className="hover:underline underline-offset-4 hover:decoration-sky-600 mt-4 text-2xl font-sans font-semibold text-black" rel="noreferrer" target="_blank" href="https://devpost.com/software/codle-tbkglw">
                 Codle
               </a>
               <div className="flex flex-row items-center space-x-8 mt-2 mb-4 mr-3 ml-3">
                 <a aria-label="Devpost Link" target="_blank" rel="noreferrer" href="https://devpost.com/software/codle-tbkglw">
-                  <Image className="ease-in-out duration-75 hover:scale-125" src="/images/devpost-logo.svg" width={100} height={30} alt="Devpost logo" />
+                  <img className="ease-in-out duration-75 hover:scale-125" src="/images/devpost-logo.svg" width={100} height={30} alt="Devpost logo" />
                 </a>
                 <a aria-label="Github Link" className="self-center justify-center items-center mr-3" target="_blank" rel="noreferrer" href="https://github.com/PCbitcamp22">
                   <svg viewBox="0 0 100 100" className="ease-in-out delay-0 duration-75 hover:scale-125 fill-black" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
@@ -138,14 +137,14 @@ export default function Home() {
             </div>
             <div className="drop-shadow-2xl rounded-md flex flex-col items-center bg-amber-100">
               <a target="_blank" rel="noreferrer" href="https://pa.junion44.rocks/">
-                <Image className="rounded-t-md" src="/images/photo-assassin.png" quality="90" width={249} height={166} alt="Photo Assassin screenshot" />
+                <img className="rounded-t-md" src="/images/photo-assassin.png" width={249} height={166} alt="Photo Assassin screenshot" />
               </a>
               <a className="hover:underline underline-offset-4 hover:decoration-sky-600 mt-4 text-2xl font-sans font-semibold text-black" rel="noreferrer" target="_blank" href="https://devpost.com/software/photo-assassin">
                 Photo Assassin
               </a>
               <div className="flex flex-row items-center space-x-8 mt-2 mb-4 mr-3 ml-3">
                 <a aria-label="Devpost Link" target="_blank" rel="noreferrer" href="https://devpost.com/software/photo-assassin">
-                  <Image className="ease-in-out duration-75 hover:scale-125" src="/images/devpost-logo.svg" width={100} height={30} alt="Devpost logo" />
+                  <img className="ease-in-out duration-75 hover:scale-125" src="/images/devpost-logo.svg" width={100} height={30} alt="Devpost logo" />
                 </a>
                 <a aria-label="Github Link" className="self-center justify-center items-center mr-3" target="_blank" rel="noreferrer" href="https://github.com/orgs/AAAP-Bitcamp/repositories">
                   <svg viewBox="0 0 100 100" className="ease-in-out delay-0 duration-75 hover:scale-125 fill-black" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
