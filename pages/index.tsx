@@ -11,22 +11,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/sunset.jpeg" />
       </Head>
-      <div className="mx-20 lg:mx-40 text-white flex-col flex-grow mb-12 justify-center">
+      <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-40 text-white flex-col flex-grow mb-12 justify-center">
         <main className="flex flex-col mt-8 justify-center space-y-5">
-          <div className="flex-nowrap rounded-lg space-x-9">
+          <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6 rounded-lg">
             <img
-              className="ml-4 mb-4 mt-4 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-120  duration-100 ring-8 ring-green-300 self-start rounded-full float-left mr-8"
-              width="175"
-              height="175"
+              className="mx-auto sm:mx-0 flex-shrink-0 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-120 duration-100 ring-8 ring-green-300 rounded-full w-36 h-36 sm:w-44 sm:h-44 object-cover"
               alt="Profile Picture"
               src="/images/profile_image.jpg"
             />
             <div className="flex-col">
-              <div className="flex flex-row flex-wrap justify-between">
-                <div className="block mt-0 font-sans text-5xl font-semibold text-white underline underline-offset-8 decoration-green-300">Arav Dave</div>
-                <div className="flex flex-row justify-center items-center">
+              <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-between sm:items-center gap-3">
+                <div className="block mt-0 font-sans text-3xl sm:text-4xl lg:text-5xl font-semibold text-white underline underline-offset-8 decoration-green-300">Arav Dave</div>
+                <div className="flex flex-row justify-start items-center gap-2">
                   <a aria-label="Email" target="_blank" rel="noreferrer" href="mailto:aravdave@gmail.com">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 ease-in-out delay-0 duration-75 hover:scale-125">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-9 h-9 ease-in-out delay-0 duration-75 hover:scale-125">
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -35,7 +33,7 @@ export default function Home() {
                     </svg>
                   </a>
                   <a aria-label="LinkedIn Link" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/aravdave/">
-                    <svg className="self-center ease-in-out delay-0 duration-75 hover:scale-125 fill-black ml-4 mt-4" height="50" width="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="self-center ease-in-out delay-0 duration-75 hover:scale-125 fill-black ml-2 mt-2" height="44" width="44" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                       <g fill="white" fill-rule="evenodd">
                         <path
                           d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z"
@@ -46,7 +44,7 @@ export default function Home() {
                     </svg>
                   </a>
                   <a aria-label="Devpost Link " target="_blank" rel="noreferrer" href="https://devpost.com/aravdave">
-                    <svg width="44px" height="29px" viewBox="0 0 44 29" className="ease-in-out delay-0 duration-75 hover:scale-125 fill-white mr-3" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="40px" height="26px" viewBox="0 0 44 29" className="ease-in-out delay-0 duration-75 hover:scale-125 fill-white ml-1" version="1.1" xmlns="http://www.w3.org/2000/svg">
                       <title>devpost-logo</title>
                       <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="layout/site-header-mobile-minilogo" transform="translate(-54.000000, -14.000000)" fill-rule="nonzero">
@@ -66,7 +64,7 @@ export default function Home() {
                     </svg>
                   </a>
                   <a aria-label="Github Link" target="_blank" rel="noreferrer" href="https://github.com/aravdave">
-                    <svg viewBox="0 0 100 100" className="ease-in-out delay-0 duration-75 hover:scale-125 fill-white" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                    <svg viewBox="0 0 100 100" className="ease-in-out delay-0 duration-75 hover:scale-125 fill-white ml-1" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
                       <path
                         fill-rule="evenodd"
                         clip-rule="evenodd"
@@ -76,7 +74,7 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-              <div className="font-mono text-xl font-medium mt-1">
+              <div className="font-mono text-base sm:text-xl font-medium mt-1">
                 <p>
                   Hi! I&apos;m a CS and Applied Math double major graduating this December from the <a className="underline underline-offset-2 decoration-red-400">University of Maryland, College Park</a>. This past summer, I was a software engineer intern
                   at Appian working on a Spring Boot w/ Hibernate Java web app. During the Summer of 2023, I was a data engineer intern at <a className="underline underline-offset-2 decoration-blue-500">Paramount Streaming</a> in NYC where I built a data
@@ -91,11 +89,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="lg:pt-6 text-center text-3xl font-semibold text-white underline underline-offset-4 decoration-sky-400">Notable Projects</div>
-          <div className="mb-8 pt-8 space-x-16 grid grid-flow-col justify-center items-center justify-items-center">
-            <div className="drop-shadow-2xl rounded-md flex flex-col items-center bg-amber-100">
-              <a target="_blank" rel="noreferrer" href="https://meal-with-me.vercel.app/">
-                <img className="rounded-t-md" src="/images/MealWithMe.png" width="225" height="100" alt="MealWithMe screenshot" />
+          <div className="lg:pt-6 text-center text-2xl sm:text-3xl font-semibold text-white underline underline-offset-4 decoration-sky-400">Notable Projects</div>
+          <div className="mb-8 pt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+            <div className="drop-shadow-2xl rounded-md flex flex-col items-center bg-amber-100 w-full max-w-sm">
+              <a target="_blank" rel="noreferrer" href="https://meal-with-me.vercel.app/" className="w-full">
+                <img className="rounded-t-md w-full h-auto" src="/images/MealWithMe.png" alt="MealWithMe screenshot" />
               </a>
               <a className="hover:underline underline-offset-4 hover:decoration-sky-600 mt-4 text-2xl font-sans font-semibold text-black" rel="noreferrer" target="_blank" href="https://meal-with-me.vercel.app/ ">
                 MealWithMe
@@ -113,9 +111,9 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="drop-shadow-2xl rounded-md flex flex-col items-center bg-amber-100">
-              <a target="_blank" rel="noreferrer" href="https://pcbitcamp22.github.io/codle/">
-                <img className="rounded-t-md" src="/images/codle.jpg" width="300" height="200" alt="Codle screenshot" />
+            <div className="drop-shadow-2xl rounded-md flex flex-col items-center bg-amber-100 w-full max-w-sm">
+              <a target="_blank" rel="noreferrer" href="https://pcbitcamp22.github.io/codle/" className="w-full">
+                <img className="rounded-t-md w-full h-auto" src="/images/codle.jpg" alt="Codle screenshot" />
               </a>
               <a className="hover:underline underline-offset-4 hover:decoration-sky-600 mt-4 text-2xl font-sans font-semibold text-black" rel="noreferrer" target="_blank" href="https://devpost.com/software/codle-tbkglw">
                 Codle
@@ -135,9 +133,9 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="drop-shadow-2xl rounded-md flex flex-col items-center bg-amber-100">
-              <a target="_blank" rel="noreferrer" href="https://pa.junion44.rocks/">
-                <img className="rounded-t-md" src="/images/photo-assassin.png" width={249} height={166} alt="Photo Assassin screenshot" />
+            <div className="drop-shadow-2xl rounded-md flex flex-col items-center bg-amber-100 w-full max-w-sm sm:col-span-2 lg:col-span-1">
+              <a target="_blank" rel="noreferrer" href="https://pa.junion44.rocks/" className="w-full">
+                <img className="rounded-t-md w-full h-auto" src="/images/photo-assassin.png" alt="Photo Assassin screenshot" />
               </a>
               <a className="hover:underline underline-offset-4 hover:decoration-sky-600 mt-4 text-2xl font-sans font-semibold text-black" rel="noreferrer" target="_blank" href="https://devpost.com/software/photo-assassin">
                 Photo Assassin
