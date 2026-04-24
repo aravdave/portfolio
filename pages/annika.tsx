@@ -9,7 +9,7 @@ export default function Annika() {
       </Head>
       <div className="flex flex-col items-center gap-8 px-6 text-center">
         <img
-          src="/images/annika.jpg"
+          src="/images/IMG_4192.jpeg"
           alt="Annika"
           className="rounded-3xl shadow-2xl w-72 sm:w-96 object-cover ring-4 ring-pink-400"
         />
